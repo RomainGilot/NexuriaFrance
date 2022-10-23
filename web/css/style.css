@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.home-screen {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-color: #ffcef7;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-screen .title {
+  font-size: 3em;
+  color: #342f8f;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.home-screen .message {
+  text-align: center;
+  font-size: 1.5em;
+  color: #77768f;
+  font-weight: 400;
+}
+
+.separateur {
+  margin: 30px;
+  display: flex;
+}
+
+.separateur .line {
+  height: 5px;
+  width: 30px;
+}
+
+.separateur .blue {
+  background-color: #342f8f;
+}
+
+.separateur .white {
+  background-color: #fdfdfd;
+}
+
+.separateur .red {
+  background-color: #d40404;
+}
+
+.separateur .pink {
+  background-color: #cd04d4;
+}
+
+.prestation-button {
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  background-color: #5000ff;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.prestation-button:hover {
+  transition: 0.5s;
+  transform: translateY(-10);
+  background-color: #4c57ea;
+}
+
+@media screen and (max-width: 1005px) {
+  .home-screen .message {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 941px) {
+  .home-screen .title {
+    font-size: 2.7em;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .home-screen .title {
+    font-size: 2.5em;
+  }
+  .home-screen .message {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 791px) {
+  .home-screen .title {
+    font-size: 2.3em;
+  }
+  .home-screen .message {
+    font-size: 1.2em;
+  }
+}
+
+.message-prestation-screen {
+  height: 70px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-prestation-screen .left .message {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.message-prestation-screen .right .tarifs-button {
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: #ff6bf8;
+  color: white;
+  transition: 0.5s;
+  color: #252525;
+  cursor: pointer;
+}
+
+.message-prestation-screen .right .tarifs-button:hover {
+  border: 2px solid #ff6bf8;
+  background-color: #252525;
+  color: #ff6bf8;
+}
+
+@media screen and (max-width: 791px) {
+  .message-prestation-screen .left .message {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 617px) {
+  .message-prestation-screen {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .message-prestation-screen .right .tarifs-button {
+    margin: 15px;
+  }
+}
+
+.prestation-screen {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prestation-screen .title {
+  font-size: 3em;
+  color: #252525;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.prestation-screen svg {
+  text-align: center;
+}
+
+.prestation-screen .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.prestation-screen .container .box {
+  margin: 20px;
+  width: 350px;
+  height: 300px;
+  background-color: #252525;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 12px rgb(173, 173, 173);
+  transition: 0.5s;
+}
+
+.prestation-screen .container .box:hover {
+  transform: scale(1.09);
+}
+
+.prestation-screen .container .box .title {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.prestation-screen .container .box .icon {
+  text-align: center;
+  transition: 0.5s;
+}
+
+.prestation-screen .container .box:hover .icon {
+  transform: scale(1.09);
+  transform: rotate(10deg);
+}
+
+.prestations-plus-infos {
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 1.3em;
+  border-radius: 10px;
+  background-color: #5000ff;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.prestations-plus-infos:hover {
+  transition: 0.5s;
+  transform: translateY(-10);
+  background-color: #4c57ea;
+}
+
+.presentation-createur {
+  padding: 15px;
+  background-image: url(../img/background-presentation.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-createur .right {
+  margin-left: 40px;
+}
+
+.presentation-createur .right .title {
+  font-size: 2.5em;
+  color: white;
+}
+
+.presentation-createur .right .message {
+  font-size: 1.5em;
+  color: white;
+}
+.contact {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .title {
+  font-size: 3em;
+  color: #252525;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.contact .choix-formulaire {
+  display: flex;
+  background-color: #252525;
+  border-radius: 15px;
+}
+
+.contact .choix-formulaire .box {
+  margin: 20px;
+  display: flex;
+}
+
+.contact .choix-formulaire .box .forms-button {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: #ff6bf8;
+  color: white;
+  transition: 0.5s;
+  color: #252525;
+  cursor: pointer;
+}
+
+.contact .formulaire .contact {
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.contact .formulaire .contact .box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contact .formulaire .contact .box label {
+  background-color: #252525;
+  color: white;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .formulaire .contact .box input {
+  width: 400px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact .formulaire .devis {
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: #252525;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.contact .formulaire .devis .box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contact .formulaire .devis .box label {
+  background-color: #252525;
+  color: white;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .formulaire .devis .box input {
+  width: 400px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+}
