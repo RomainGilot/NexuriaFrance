@@ -10,6 +10,15 @@
             </ul>
         </div>
 
-        <iconify-icon icon="ci:hamburger" id="menu-hamburger" class="menu-hamburger"></iconify-icon>
+        <iconify-icon icon="ci:hamburger" id="menu-hamburger" class="menu-hamburger" onclick="activeMenu()"></iconify-icon>
 
     </nav>
+
+    <script>
+        function activeMenu() {
+            const menuHamburger = document.querySelector("#menu-hamburger");
+            const navLinks = document.querySelector("#nav-links");
+
+            navLinks.classList.toggle("active");
+        }
+    </script>

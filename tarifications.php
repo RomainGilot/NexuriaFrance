@@ -22,103 +22,16 @@ require('./views/v_navbar.php');
         HOME SCREEN
     ------------------- 
 -->
-<!-- <div class="cookie">
-    <div class="cookie-box">
-        <iconify-icon icon="fa:close" class="close-btn"></iconify-icon>
-        <img src="web/img/cookie.png" alt="">
-        <h3>Gestion des cookies</h3>
-        <p>Nexuria France utilise les cookies pour une meilleure érgonomie et utilisation.</p>
-        <a href="#" class="accepte">Acceptez tous les cookies</a>
-        <a href="#" class="en-savoir-plus">En savoir plus...</a>
-    </div>
-</div> -->
-<style>
-    h3,
-    p,
-    a {
-        font-family: 'Arial';
-    }
 
-    .cookie-box {
-        width: 350px;
-        position: fixed;
-        top: 100px;
-        left: 37%;
-        z-index: 1000;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 10px 15px gray;
-        text-align: center;
-        padding: 30px;
-    }
-
-    .cookie-box h3 {
-        font-size: 1.7em;
-        font-weight: bolder;
-    }
-
-    .cookie-box p {
-        margin: 10px;
-        color: #898686;
-        font-size: 1.2em;
-    }
-
-    .cookie-box img {
-        height: 110px;
-        animation: image 10s linear infinite;
-    }
-
-    @keyframes image {
-        0% {
-            transform: rotate(360deg);
-        }
-    }
-
-    .cookie-box .close-btn {
-        position: absolute;
-        top: 12px;
-        right: 12px;
-        font-size: 20px;
-        color: #999;
-        cursor: pointer;
-    }
-
-    .cookie-box .close-btn:hover {
-        color: #333;
-    }
-
-    .cookie-box .accepte {
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-        font-size: 1.3em;
-        background-color: pink;
-        color: white;
-        border-radius: 10px;
-    }
-
-    .cookie-box .en-savoir-plus {
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-        font-size: 1.3em;
-        background-color: gray;
-        color: white;
-        border-radius: 10px;
-    }
-</style>
 
 <div class="home-screen" id="accueil">
-    <h4 class="title">Envie d'un site web pour votre projet ?</h4>
-    <p class="message">Découvrez Nexuria France, une auto-entreprise qui correspondra à vos attentes.</p>
+    <h4 class="title">TARIFICATIONS</h4>
+    <p class="message">Découvrez les tarifs que proposent Nexuria France !</p>
     <div class="separateur">
         <div class="line blue"></div>
         <div class="line white"></div>
         <div class="line red"></div>
     </div>
-    <button type="button" class="prestation-button">Nos Prestations en cliquant ici.</button>
 </div>
 
 <!-- 
